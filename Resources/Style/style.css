@@ -1,0 +1,344 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+
+/*Header*/
+header{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    z-index: 10;
+    width: 100%;
+    border-bottom: black solid 3px;
+    background-color: #ffffff;
+}
+
+header .content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .content .logo{
+    margin-top: 4.5rem;
+    margin-left: 5rem;
+    background-color: rgb(165, 165, 165);
+    padding: 10px;
+    border-radius: 100%;
+    border: #E9FF0A 2px solid;
+}
+
+header .content .side-btns{
+    margin-right: 5rem;
+}
+
+header .content .side-btns ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+header .content .side-btns ul li a{
+    color: black;
+}
+
+#h-btn:hover{
+    transition: color 0.2s;
+    color: #E9FF0A;
+}
+
+
+/*Overview*/
+.overview{
+    position: relative;
+    background-image: url('./pexels-clem-onojeghuo-175771.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 5rem;
+    background-position-y: -15rem;
+    width: 100%;
+    border-bottom: black 3px solid;
+}
+
+#backdrop{
+    position: relative;
+    height: 48rem;
+    background-color: rgba(0, 0, 0, 0.507);
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.overview .over-container{
+    left: 15rem;
+    position: relative;
+    width: 30rem;
+    border: #ebff0a70 solid 3px;
+    height: 30rem;
+}
+
+.overview .over-container .info{
+    position: relative;
+    width: 30rem;
+    border: #ffffff70 solid 3px;
+    height: 30rem;
+    top: 2rem;
+    left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview .over-container .info .info-content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -2rem;
+    left: -2rem;
+}
+
+.overview .over-container .info .info-content .info-content-content{
+    position: relative;
+    width: 80rem;
+    left: 20rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    background-color: #00000023;
+}
+
+.overview .over-container .info .info-content .info-content-content h1{
+    color: #ffffff;
+}
+
+.overview .over-container .info .info-content .info-content-content p{
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+
+
+/*specialize-container*/
+.specialize-container{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.specialize-container .skillsOverview{
+    width: 80rem;
+    padding: 5rem 3rem 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.specialize-container .skillsOverview p{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#listP{
+    padding: 0;
+}
+
+#listH2{
+    text-wrap: nowrap;
+    text-decoration: none;
+}
+
+.specialize-container .skillsOverview .coreValues{
+    width: 75rem;
+    padding: 4rem 3rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    border: #E9FF0A solid 3px;
+}
+
+.specialize-container .skillsOverview .coreValues h2{
+    padding-bottom: 3rem;
+    text-align: center;
+    text-decoration: underline solid 3px;
+}
+
+strong{
+    font-weight: bolder;
+}
+
+.specialize-container .skillsOverview .coreValues .coreValues-info ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.specialize-container .skillsOverview .coreValues .coreValues-info ul li{
+    list-style: circle;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    gap: 1rem;
+}
+.specialize-container .skillsOverview .coreValues .coreValues-info ul li h2{
+    text-align: left;
+    width: 32%;
+}
+.specialize-container .skillsOverview .coreValues .coreValues-info ul li p{
+    font-size: 1.5rem;
+    text-align: left;
+    width: 80%;
+}
+
+/*Work section*/
+.work-section{
+    position: relative;
+    height: 100%;
+    background-color: #E9FF0A;
+    padding: 3rem;
+}
+
+.work-section .img-container{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+.work-section .img-container .heading{
+    padding: 3rem 0rem 1.5rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#h-h1{
+    text-decoration: underline 3px solid black;
+}
+
+#box:hover{
+    transition: scale 0.4s;
+    scale: 1.5;
+    z-index: 9;
+}
+
+.work-section .img-container .box {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.work-section .img-container .box .before{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #9b9b9b;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    box-shadow: 0.5rem 0.5rem  black;
+}
+
+.work-section .img-container .box .before ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 1rem;
+}
+
+.work-section .img-container .box .before ul li img{
+    width: 30rem;
+    border: solid black 3px;
+}
+
+.box h2{
+    text-align: center;
+    border: solid black 3px;
+    background-color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+
+/*portfolio*/
+.portfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    padding: 1rem;
+}
+
+.portfolio .pContainer{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: solid black;
+    border-bottom: solid black;
+    padding: 2rem;
+}
+
+.portfolio .pContainer h2{
+    padding-bottom: 2rem;
+    font-size: 2.2rem;
+}
+
+.portfolio .pContainer p{
+    line-height: 1.6;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+/*Footer*/
+footer {
+    background-color: #9b9b9b;
+    height: 3.875rem;
+    width: 100%;
+  }
+  
+  footer .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  footer .footer span{
+    color: #ffffff;
+    font-size: .75rem;
+    padding: 0 2rem;
+  }
+  
+  footer .copyright {
+    flex-grow: 1;
+  }
