@@ -75,67 +75,83 @@ header .content .side-btns ul li a{
     background-position-y: -15rem;
     width: 100%;
     border-bottom: black 3px solid;
+    height: 52rem;
 }
 
-#backdrop{
-    position: relative;
-    height: 48rem;
-    background-color: rgba(0, 0, 0, 0.507);
-    display: flex;
-    align-items: center;
-    padding: 2rem;
-}
-
-.overview .over-container{
-    left: 15rem;
-    position: relative;
-    width: 30rem;
-    border: #ebff0a70 solid 3px;
-    height: 30rem;
-}
-
-.overview .over-container .info{
-    position: relative;
-    width: 30rem;
-    border: #ffffff70 solid 3px;
-    height: 30rem;
-    top: 2rem;
-    left: 2rem;
+.overview .overview-content{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
-.overview .over-container .info .info-content{
-    position: relative;
+.overview .overview-content p{
     display: flex;
     justify-content: center;
     align-items: center;
-    top: -2rem;
-    left: -2rem;
-}
-
-.overview .over-container .info .info-content .info-content-content{
-    position: relative;
-    width: 80rem;
-    left: 20rem;
-    padding: 1rem;
-    border-radius: 1rem;
-    backdrop-filter: blur(10px);
-    background-color: #00000023;
-}
-
-.overview .over-container .info .info-content .info-content-content h1{
     color: #ffffff;
-}
-
-.overview .over-container .info .info-content .info-content-content p{
-    color: #ffffff;
+    background-color: #00000091;
+    width: 80%;
     font-size: 1.5rem;
-    line-height: 1.6;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    backdrop-filter: blur(5px);
 }
 
+@media only screen and (min-width: 1610px) {
+    .overview .overview-content p{
+        width: 90rem;
+    }
+}
 
+@media only screen and (max-width: 1610px) {
+    .overview{
+        height: 40rem;
+    }
+}
+
+@media only screen and (max-width: 1320px){
+    .overview{
+        height: 30rem;
+        background-repeat: repeat;
+        background-position-x: 50%;
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    .overview{
+        height: 30rem;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    .overview{
+        background-repeat: repeat;
+        background-position-x: 50%;
+    }
+
+    .overview .overview-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 520px){
+    .overview{
+        background-color: #E9FF0A;
+        background-image: none;
+        width: 100%;
+    }
+
+    .overview .overview-content{
+        height: 100%;
+        width: 100%;
+    }
+}
 
 /*specialize-container*/
 .specialize-container{
@@ -161,6 +177,10 @@ header .content .side-btns ul li a{
     padding-bottom: 2rem;
 }
 
+.specialize-container .skillsOverview h1{
+    text-align: center;
+}
+
 #listP{
     padding: 0;
 }
@@ -171,7 +191,7 @@ header .content .side-btns ul li a{
 }
 
 .specialize-container .skillsOverview .coreValues{
-    width: 75rem;
+    width: 90%;
     padding: 4rem 3rem 1rem 3rem;
     display: flex;
     flex-direction: column;
@@ -202,14 +222,52 @@ strong{
     padding-bottom: 3rem;
     gap: 1rem;
 }
+
 .specialize-container .skillsOverview .coreValues .coreValues-info ul li h2{
     text-align: left;
     width: 32%;
 }
+
 .specialize-container .skillsOverview .coreValues .coreValues-info ul li p{
     font-size: 1.5rem;
     text-align: left;
     width: 80%;
+}
+
+@media only screen and (max-width: 1220px) {
+    #listH2{
+        text-wrap: wrap;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    #listH2{
+        text-wrap: wrap;
+        text-decoration: none;
+        padding-bottom: 0rem;
+    }
+
+    .specialize-container .skillsOverview .coreValues .coreValues-info ul li{
+        list-style: circle;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 3rem;
+        gap: 1rem;
+    }
+
+    .specialize-container .skillsOverview .coreValues .coreValues-info ul li h2{
+        text-align: left;
+        width: 100%;
+    }
+
+    .specialize-container .skillsOverview .coreValues .coreValues-info ul li p{
+        font-size: 1.5rem;
+        text-align: left;
+        width: 100%;
+    }
+
 }
 
 /*Work section*/
@@ -218,6 +276,9 @@ strong{
     height: 100%;
     background-color: #E9FF0A;
     padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .work-section .img-container{
@@ -251,6 +312,7 @@ strong{
     align-items: start;
     flex-wrap: wrap;
     flex-grow: 1;
+    gap: 2rem;
 }
 
 .work-section .img-container .box .before{
@@ -286,6 +348,41 @@ strong{
     margin-bottom: 1rem;
 }
 
+@media only screen and (max-width: 710px){
+    .work-section .img-container{
+        background: none;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .work-section{
+        position: relative;
+        height: 100%;
+        background-color: #E9FF0A;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .work-section .img-container .heading{
+        text-align: center;
+        padding: 1.5rem 0 0 0;
+    }
+
+    .work-section .img-container .box .before{
+        box-shadow: none;
+    }
+
+    #img1, #img5, #img6, #img8, #img9, #img12, #img13, #img14, #img16, #img17, #img18{
+        display: none;
+    }
+
+    .work-section .img-container .box .before ul li img{
+        width: 100%;
+    }
+}
+
 
 /*portfolio*/
 .portfolio{
@@ -316,6 +413,16 @@ strong{
     line-height: 1.6;
     font-size: 1.5rem;
     text-align: center;
+}
+
+@media only screen and (max-width: 1220px){
+    .portfolio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 1rem;
+    }
 }
 
 
